@@ -11,7 +11,7 @@ h1 {
   letter-spacing: 2px;
 }
 
-/* Filter Buttons */
+
 .filter-buttons {
   margin-bottom: 20px;
 }
@@ -32,7 +32,7 @@ h1 {
   background: #007bff;
 }
 
-/* Gallery Grid */
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -53,7 +53,7 @@ h1 {
   filter: brightness(1.2);
 }
 
-/* Lightbox */
+
 .lightbox {
   display: none;
   position: fixed;
@@ -83,7 +83,7 @@ h1 {
 .prev { left: 20px; top: 50%; }
 .next { right: 20px; top: 50%; }
 
-/* Animation */
+
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.95); }
   to { opacity: 1; transform: scale(1); }

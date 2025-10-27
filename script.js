@@ -27,7 +27,7 @@ const filterBtns = document.querySelectorAll(".filter-btn");
 let currentImages = [...imageData];
 let currentIndex = 0;
 
-// Load images dynamically
+
 function loadImages(images) {
   gallery.innerHTML = "";
   images.forEach((img, index) => {
@@ -44,18 +44,18 @@ function loadImages(images) {
   });
 }
 
-// Show lightbox
+
 function showLightbox(src) {
   lightbox.style.display = "flex";
   lightboxImage.src = src;
 }
 
-// Close lightbox
+
 function closeLightbox() {
   lightbox.style.display = "none";
 }
 
-// Filter functionality
+
 filterBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     document.querySelector(".filter-btn.active").classList.remove("active");
@@ -71,7 +71,7 @@ filterBtns.forEach((btn) => {
   });
 });
 
-// Lightbox navigation
+
 nextBtn.addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % currentImages.length;
   lightboxImage.src = currentImages[currentIndex].src;
@@ -87,5 +87,5 @@ lightbox.addEventListener("click", (e) => {
   if (e.target === lightbox) closeLightbox();
 });
 
-// ✅ Initial load (keep this LAST)
+
 loadImages(imageData);
